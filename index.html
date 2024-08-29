@@ -7,8 +7,13 @@
 
     <link rel="shortcut icon" href="/tree.jpeg" type="image/jpeg">
     <style>
-        #hello {
+        .hello {
             color: green;
+            font-size: 5rem;
+        }
+        #div_test{
+          color: red;
+          font-size: 2rem;
         }
     </style>
     
@@ -18,19 +23,19 @@
 
 
   
-<h1 id = "hello">Hello World</h1>
+<h1 class = "hello">Hello World</h1>
 
 안녕하세요 
 
 
-  <div id = "div_test"  class="div_class" style="color:#cf9696">내용을 담을 수 있습니다</div>
-  <img src = "tree.jpeg" alt="sample image" onerror="alert('꽝');" style="width: 50px;"/>
-  <img src = "tree.jpeg" alt="sample image" onerror="alert('꽝');" style="width: 100px;"/>
+  <div id = "div_test"   style="background-image: url(tree.jpeg);">내용을 담을 수 있습니다</div>
+  <img src = "tree.jpeg" alt="sample image" onerror="alert('꽝');" width="50px" />
+  <img src = "tree.jpeg" alt="sample image" onerror="alert('꽝');" style="width: 100px; height: auto;"/>
   <div>
     H태그입니다 
   </div>
 
-  <h1>h1 태그입니다</h1>
+  <h1 >h1 태그입니다</h1>
   <h2>h2 태그입니다</h2>
   <h3>h3 태그입니다</h3>
   <h4>h4 태그입니다</h4>
@@ -59,8 +64,12 @@
     <li>리스트</li>
     <li>리스트</li>
   </ol>
+
+  <a href="https://www.naver.com/" target="_blank">네이버링크</a> 
+  <a href="javascript:alert(1);" >a태그인데 js실행</a> 
   
-  <a href="https://www.naver.com/">네이버링크</a> 
+
+
 
 
 </body>
