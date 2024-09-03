@@ -7,51 +7,7 @@
     Welcome to MinjunKim’s Homepage 22000078
   </title>
 
-  <style>
-    #top {
-      font-size: 16px;
-       background-color: #04AA6D;
-       color: white;
-      padding: 7px;
-      font-weight: bold;
-      border-radius: 4px;
-
-
-    }
-    #top h1{
-      margin-bottom: 2px;
-    }
-    #top p{
-      margin-top: 0px;        
-    }
-
-    a {
-      text-decoration: none;
-      
-    }
-
-    #menubar {
-      position: absolute; /* 메뉴바를 화면 왼쪽에 고정 */
-      width: 180px;
-      
-      left: 0;
-      padding: 15px;
-      height: 100%;
-     
-    }
-    #mainbody {
-      margin-left: 150px; /* 메뉴바와 겹치지 않도록 본문 위치 조정 */
-      padding: 20px;
-    }
-    /* #sidebar{
-      position: absolute;
-      height: 100%;
-      right: 0;
-      
-    } */
-  </style>
-
-
+  <link rel="stylesheet" href="indexstyle.css">
 
 </head>
 <body>
@@ -64,45 +20,41 @@
     
     
   <div id="menubar"> 
-    <a href="style1.html" style="color:black" >Stylesheet 1 </a>
+    <a href="style1.html" style="color:black" class="menuitem"  > <div id="first-item">Stylesheet 1</div> </a>
     <br/>
-    <a href="style2.html " style="color:black">Stylesheet 2  </a>
+    <a href="style2.html " style="color:black" class="menuitem"><div id="menu-item">Stylesheet 2</div>  </a>
     <br/>
-    <a href="example.html" style="color:black"> example page </a>
-    
-    
+    <a href="example.html" style="color:black" class="menuitem"> <div id="menu-item">example page</div></a>
   </div>
+
 
   <div id="mainbody">
-  Same Page Different Stylesheets
-  <div>
-    This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:
-    Stylesheet1, Stylesheet2, Stylesheet3, Stylesheet4.
-  </div>
-  <div>
-    No Styles
-  </div> 
-  <div>
-    This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:
-    No Stylesheet.
-  </div>
-
-  </div>
+    <h1>Same Page Different Stylesheets</h1>
+    <p>
+      This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:
+      Stylesheet1, Stylesheet2, Stylesheet3, Stylesheet4.
+    </p>
   
-
+    <h2>No Styles</h2>  
+    <div>
+      This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:
+      No Stylesheet.
+    </div>
+  </div>
 
   <div id="sidebar">
-    Side-Bar
-    <div>
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-    </div>
-  
+     <h2>Side-Bar</h2> 
+     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
   </div>
 
-  
   <div id="footer">
     Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
   </div>
+
   </div>
+
 </body>
 </html>
+
+
+
