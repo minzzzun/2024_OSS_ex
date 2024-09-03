@@ -4,6 +4,11 @@ body{
   line-height: 26px;
 
 }
+
+div{
+  display: block;
+  unicode-bidi: isolate;
+}
     
 #top{
   background-color: #04aa6d;
@@ -11,9 +16,15 @@ body{
   padding: 15px;
 }
 
-#top h1, #top p, #menubar{
+#top h1, #top p, #menulist{
   margin: 0;
   padding: 0;
+}
+
+
+#menubar{
+  width: 200px;
+  float: left;
 }
 
 #top, #sidebar, #footer, .menu-item{
@@ -24,7 +35,6 @@ body{
 
 #menubar a{
   text-decoration: none;
-  /* border: 1px solid #d4d4d4; */
 
 }
 
@@ -39,13 +49,27 @@ body{
   font-weight: bold;
 }
 
+#menu-item{
+  background-color: #f1f1f1;
+  border: 1px solid #d4d4d4;
+  padding: 2px;
+}
 
-
+#main{
+  padding: 10px;
+  margin: 0 210px;
+}
 
 
 #sidebar {
   background-color: #32a4e7;
   color: white;
+  padding: 10px;
+  width: 180px;
+  bottom: 0px;
+  top: 0px;
+  right: 0px;
+  position: absolute;
 }
 
 #footer{
