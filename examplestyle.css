@@ -78,7 +78,8 @@ p{
 
 
 #third-btn{
-  color: #6c757d;
+  /* color: #6c757d; */
+  color: red;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 1rem;
