@@ -1,16 +1,5 @@
-body{
-  
-}
+h1{
 
-
-
-
-h1{ 
-  position: absolute;
-
-  margin: 0 auto;
-}
-#email{
-  padding: 16 12 px;  
-
+  left: 500px;
+  top: 50%;
 }
