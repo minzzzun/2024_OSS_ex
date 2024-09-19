@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>20240902</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="../img/star.jpg">
+    <style>
+    .input_basic{
+        background-color: aqua;
+    }
+
+    @media (max-width: 800px) {
+        .input_basic {
+            background-color: brown;
+        }   
+    }
+    </style>
+</head>
+<body>
+
+    <div id="div1" >
+       div1 클릭 테스트 
+    </div>
+
+
+    <div class="div_class">div_02</div>
+    <div class="div_class">div_03</div>
+    <div class="div_class">div_04</div>
+
+
+
+
+
+    <div id="div2" onmouseover="reset_css(1)" onmouseleave="reset_css(2)">
+       div2 마우스 오버 테스트 
+    </div>
+
+    <input id="add_1" type="number" /> + 
+    <input id="add_2" type="number" onkeyup="console.log('keyup')" onkeydown="console.log('keydown')" onchange="console.log('onchange');"/>
+    =
+    <input id="sum" type="number" />
+
+    <button onclick="add();">더해주세요!</button>
+    <script>    
+        //  alert("이제 바뀝니다");
+        let div_01 = document.getElementById("div1")
+        // div_01.textContent = '바뀐후 텍스트';
+        let num = 0;
+
+       div_01.addEventListener('click', changeText);
+
+      function changeText(){
+        div_01.textContent = num++ + '번째 바뀐 텍스트';
+      }
+
+
+      let div_class = document.getElementsByClassName("div_class");
+    //   alert(div_class.length);
+    div_class[0].textContent="바뀐 클래스"
+      
+
+    
+
+        function add(){
+            let num1 = document.getElementById("add_1").value;
+            let num2 = document.getElementById("add_2").value;
+
+            let sum = Number(num1) + Number(num2);
+            //alert(sum);
+            document.getElementById("sum").value = sum;
+        }
+        function reset_css(obj_type){
+            let div2 = document.getElementById("div2");
+            if(obj_type == 1){
+                div2.style = "background-color:yellow;";
+            } else {
+                div2.style = "background-color:blue;";
+            }
+            
+        }
+
+    </script>
+
+</body>
+</html>
