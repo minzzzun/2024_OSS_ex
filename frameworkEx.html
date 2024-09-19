@@ -134,7 +134,7 @@
 
 
 <div class="mb-3">
-  <label for="exampleFormControlInput1" class="form-label">Email address</label>
+  <label for="exampleFormControlInput1" class="form-label" >Email address</label>
   <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
 </div>
 <div class="mb-3">
@@ -146,5 +146,27 @@
 <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c" title="Choose your color">
 
 
+
+
+<button class="btn btn-primary" onclick="getContent()">submit</button>
+
+
+<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<script>
+  let col = $(".col-6");
+
+
+  let row = $(".row");
+  // alert(row.length);
+
+  for (let i = 0; i<row.length ; i++){
+    $(col[i]).css("background-color","red");
+  }
+  function getContent(){
+    alert($("#exampleFormControlInput1").val());
+  }
+
+</script>
 </body>
 </html>
