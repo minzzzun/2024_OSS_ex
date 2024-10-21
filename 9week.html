@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <script>
+    let arr1 = ["apple","banana","peach"];
+    alert(arr1[1]);
+    let jsonStr = JSON.stringify(arr1);
+    alert(jsonStr);
+
+    arr1.push("pear");
+    alert(arr1);
+
+    let sum = 0; 
+    let array_num = [1,2,3,4];
+    array_num.forEach(function(num){
+      sum += num;
+    });
+
+    let sum2 = 0;
+    for(let i = 0; i < array_num.length ; i++ ){
+      sum2 += array_num[i];
+    }
+    
+    alert(sum);
+// for each 문 예시 
+//     array.forEach((item, index, array) => {
+//   // 코드 실행
+// });
+    // alert(sum);
+    // console.log(sum);
+
+
+
+    // 구조 분해 할당
+    let data = [1,2,3,4,5];
+    let [,number1,,number3] = data;
+    alert(number1);
+    alert(number3);
+    
+  </script>
+</body>
+</html>
