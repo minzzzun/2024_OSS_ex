@@ -7,14 +7,17 @@
 </head>
 <body>
 
+    <div id="test"></div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
   <script>
     let arr1 = ["apple","banana","peach"];
-    alert(arr1[1]);
+    // alert(arr1[1]);
     let jsonStr = JSON.stringify(arr1);
-    alert(jsonStr);
+    // alert(jsonStr);
 
     arr1.push("pear");
-    alert(arr1);
+    // alert(arr1);
 
     let sum = 0; 
     let array_num = [1,2,3,4];
@@ -27,7 +30,7 @@
       sum2 += array_num[i];
     }
     
-    alert(sum);
+    // alert(sum);
 // for each 문 예시 
 //     array.forEach((item, index, array) => {
 //   // 코드 실행
@@ -40,9 +43,49 @@
     // 구조 분해 할당
     let data = [1,2,3,4,5];
     let [,number1,,number3] = data;
-    alert(number1);
-    alert(number3);
-    
+    // alert(number1);
+    // alert(number3);
+
+    let person =  {
+      firstName : "민준",
+      LastName :  "김",
+      age : 24
+    };
+
+    let {LastName,firstName} = person;
+    console.log(LastName+firstName);
+    // alert(LastName);
+    // alert(firstName);
+
+    //alias 
+    let { LastName: familyName, firstName: givenName } = person;
+    console.log(familyName,givenName);
+
+    let jsonPerson =  {
+      "firstName" : "민준",
+      "LastName" :  "김",
+      "age" : 24
+    };
+// json을 문자화
+    $("#test").html(JSON.stringify(jsonPerson));
+    // console.log(jsonPerson.LastName);
+
+
+
+    //arrow function 
+    // 함수 선언식 (기존 방식)
+const add1 = function(a, b) {
+  return a + b;
+};
+
+// 화살표 함수로 변환
+const add2 = (a, b) => a + b;
+
+console.log(add1(2, 3)); // 출력: 5
+console.log(add2(2, 3)); // 출력: 5
+
+window.open("https://www.google.com"); // 새 창 열기
+
   </script>
 </body>
 </html>
